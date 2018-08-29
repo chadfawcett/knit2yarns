@@ -8,7 +8,7 @@ public_folder: /images/uploads
 collections:
   - name: 'classes'
     label: 'Classes'
-    folder: '_classes'
+    folder: 'markdown/classes'
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
