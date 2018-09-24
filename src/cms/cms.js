@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import CMS from 'netlify-cms'
 
 //  Import component styles? Might not need it if using styled-components

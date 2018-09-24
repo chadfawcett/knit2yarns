@@ -1,0 +1,87 @@
+.red {
+  color: red;
+}
+
+.logo {
+  max-height: 125px !important;
+  max-width: 50% !important;
+  margin-bottom: 25px;
+}
+
+.nav-container__sub-header {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-container__sub-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-slider .slides li.overlay:before {
+  opacity: 0.65;
+}
+
+header.signup:before {
+  opacity: 0.4;
+}
+
+.no-margin-top {
+  margin-top: 0px !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px !important;
+}
+
+.m-t-2 {
+  margin-top: 15px;
+}
+
+.m-t-4 {
+  margin-top: 30px;
+}
+
+.m-b-0 {
+  margin-bottom: 0 !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .sm-text-center {
+    text-align: center;
+  }
+}
+
+.hero-slider .slides p.hero-text {
+  font-size: 1.2em;
+}
+
+.text-light-gray {
+  color: #aaa;
+}
+
+.blog-masonry-container {
+  margin-bottom: -30px;
+}
+
+.blog-masonry-container .price-details {
+  margin-bottom: 10px;
+}
+
+.blog-masonry-container .price {
+  font-size: 1.5em;
+  color: #8a4d9c;
+  display: inline;
+}
+
+.blog-masonry-item .post-title {
+  background-color: #f4f4f4;
+}
+
+h1 {
+  margin-bottom: 32px;
+}

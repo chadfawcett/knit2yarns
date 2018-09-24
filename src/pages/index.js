@@ -1,14 +1,29 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import Nav from '../components/nav'
+import HeroSlider from '../components/heroSlider'
+import NewsletterSignup from '../components/newsletterSignup'
+import About from '../components/about'
+import Classes from '../components/classes'
+import Instagram from '../components/instagram'
+import Contact from '../components/contact'
+import Map from '../components/map'
+import Footer from '../components/footer'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Nav />
+    <div className="main-container">
+      <HeroSlider />
+      <NewsletterSignup />
+      <About />
+      <Classes />
+      <Instagram />
+      <Contact />
+      <Map />
+    </div>
+    <Footer />
   </Layout>
 )
 
