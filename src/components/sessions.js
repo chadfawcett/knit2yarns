@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Classes = () => (
+const Sessions = () => (
   <section>
     <div className="container">
       <h1 id="classes">Upcoming classes</h1>
@@ -24,33 +24,7 @@ const Classes = () => (
             {% capture event_date %}{{ class.date | date: "%s" }}{% endcapture %}
             {% if event_date > now_unix %}
               {% assign count = count | plus: 1 %}
-              <div className="col-md-4 col-sm-6 blog-masonry-item branding">
-                <div className="item-inner">
-                  {% if class.image_url %}
-                    <a
-                      href="{{ class.image_url }}"
-                      data-lightbox="{{ class.title | replace: " ", "-" | downcase }}"
-                      data-title="{{ class.title }}">
-                      <img alt="Blog Preview" src="{{ class.image_url }}">
-                    </a>
-                  {% endif %}
-
-                  <div className="post-title">
-                    <h2>{{ class.title }}</h2>
-                    <p>{{ class.description }}</p>
-                    <p className="price-details">
-                      <span className="price">${{ class.price }}</span>
-                      {% if class.price_details %}
-                        {{ class.price_details }}
-                      {% endif %}
-                    </p>
-                    <div className="post-meta">
-                      <span className="sub alt-font">{{ class.meta_1 }}</span>
-                      <span className="sub alt-font">{{ class.meta_2 }}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Class />
             {% endif %}
           {% endfor %} */}
 
@@ -66,4 +40,4 @@ const Classes = () => (
   </section>
 )
 
-export default Classes
+export default Sessions

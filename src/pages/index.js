@@ -5,7 +5,7 @@ import Nav from '../components/nav'
 import HeroSlider from '../components/heroSlider'
 import NewsletterSignup from '../components/newsletterSignup'
 import About from '../components/about'
-import Classes from '../components/classes'
+import Sessions from '../components/sessions'
 import Instagram from '../components/instagram'
 import Contact from '../components/contact'
 import Map from '../components/map'
@@ -18,7 +18,7 @@ const IndexPage = () => (
       <HeroSlider />
       <NewsletterSignup />
       <About />
-      <Classes />
+      <Sessions />
       <Instagram />
       <Contact />
       <Map />
