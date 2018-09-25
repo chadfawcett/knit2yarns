@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Session = session => (
-  <div className="col-md-4 col-sm-6 blog-masonry-item branding">
+const Session = ({ session, ...rest }) => (
+  <div className="col-md-4 col-sm-6 blog-masonry-item branding" {...rest}>
     <div className="item-inner">
       {session.image_url && (
         <a
@@ -31,14 +31,26 @@ const Session = session => (
 )
 
 Session.propTypes = {
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  image_url: PropTypes.string,
-  meta_1: PropTypes.string,
-  meta_2: PropTypes.string,
-  price: PropTypes.number,
-  price_details: PropTypes.string,
-  description: PropTypes.string.isRequired,
+  session: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    image_url: PropTypes.string,
+    meta_1: PropTypes.string,
+    meta_2: PropTypes.string,
+    price: PropTypes.number,
+    price_details: PropTypes.string,
+    description: PropTypes.string.isRequired,
+  }),
 }
 
+const previewStyles = {
+  width: 300,
+}
+
+export const SessionPreview = ({ entry }) => {
+  const session = entry.toJS().data
+  session.date = session.date.toString()
+
+  return <Session style={previewStyles} session={session} />
+}
 export default Session

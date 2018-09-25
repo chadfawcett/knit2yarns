@@ -78,7 +78,7 @@ class Sessions extends React.Component {
                     {sessions.map(({ frontmatter }) => (
                       <Session
                         key={frontmatter.title + frontmatter.date}
-                        {...frontmatter}
+                        session={frontmatter}
                       />
                     ))}
 
