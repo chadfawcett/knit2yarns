@@ -20,7 +20,7 @@ const Nav = () => (
           <div className="col-sm-12 text-center nav-container__sub-header">
             <span className="vjs-1454979028076-4 vir" vic="vjs-1454979028076-4">
               <a
-                href="http://maps.google.com/maps?q=40+1967+Trans-Canada+Hwy,+Kamloops,+BC"
+                href="https://maps.google.com/maps?q=40+1967+Trans-Canada+Hwy,+Kamloops,+BC"
                 target="blank"
               >
                 <i
