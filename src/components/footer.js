@@ -7,7 +7,7 @@ const Footer = () => (
         <div className="row">
           <div className="sm-text-center m-t-2 col-sm-6">
             <span className="sub">
-              © Copyright 2016 Knit2 Yarns Limited
+              © Copyright {new Date().getFullYear()} Knit2 Yarns Limited
               <br />
             </span>
           </div>
