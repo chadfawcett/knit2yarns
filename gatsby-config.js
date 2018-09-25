@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: 'Knit2 Yarns - Kamloops Yarn and Knitting Shop',
+    facebook_username: 'Knit2 - Yarns - 1683481525241962',
+    instagram_username: 'carla_knit2yarns',
+    pinterest_username: 'crfawcett1',
+    description:
+      "Knit2 Yarns is Kamloops' newest Yarn Shop. We have a great selection of yarns and notions for all your knitting needs. We carry Malabrigo, Noro, Sweet Georgia, Smith and Ewe, Cascade, Berroco, and much more!",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
