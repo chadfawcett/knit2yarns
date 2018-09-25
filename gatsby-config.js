@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Knit2 Yarns - Kamloops Yarn and Knitting Shop',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
