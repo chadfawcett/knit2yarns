@@ -635,23 +635,23 @@ $(window).load(function() {
 
   // Blog Masonry
 
-  //   $('.blog-masonry-container').isotope({
-  //     itemSelector: '.blog-masonry-item',
-  //     layoutMode: 'masonry',
-  //   })
+  $('.blog-masonry-container').isotope({
+    itemSelector: '.blog-masonry-item',
+    layoutMode: 'masonry',
+  })
 
-  //   $('.blog-filters li').click(function() {
-  //     var current = $(this)
+  $('.blog-filters li').click(function() {
+    var current = $(this)
 
-  //     current.siblings('li').removeClass('active')
-  //     current.addClass('active')
+    current.siblings('li').removeClass('active')
+    current.addClass('active')
 
-  //     var filterValue = current.attr('data-filter')
-  //     var container = current
-  //       .closest('.blog-masonry')
-  //       .find('.blog-masonry-container')
-  //     container.isotope({ filter: filterValue })
-  //   })
+    var filterValue = current.attr('data-filter')
+    var container = current
+      .closest('.blog-masonry')
+      .find('.blog-masonry-container')
+    container.isotope({ filter: filterValue })
+  })
 })
 
 // function handleTweets(tweets) {

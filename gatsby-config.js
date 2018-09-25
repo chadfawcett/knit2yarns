@@ -23,5 +23,13 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sessions`,
+        path: `${__dirname}/markdown/sessions/`,
+      },
+    },
+    'gatsby-transformer-remark',
   ],
 }

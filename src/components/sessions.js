@@ -1,43 +1,102 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
-const Sessions = () => (
-  <section>
-    <div className="container">
-      <h1 id="classes">Upcoming classes</h1>
+import Session from './session'
 
-      {/* {% assign count = 0 %}
-      {% capture now_unix %}{{ 'now' | date: "%s" }}{% endcapture %} */}
+class Sessions extends React.Component {
+  componentDidMount() {
+    const $ = window.$
 
-      <p className="lead">
-        If you are interested in any of our classes, please call the store (
-        <span className="bold">250-314-0276</span>) or email us (
-        <span className="bold">contact@knit2yarns.com</span>
-        ). If you would like to see what the finished products look like, stop
-        by the store and we'll be happy to show you. Materials not included in
-        class price.
-      </p>
-      <br />
+    //  Setup Masonry
+    $('.blog-masonry-container').isotope({
+      itemSelector: '.blog-masonry-item',
+      layoutMode: 'masonry',
+    })
 
-      <div className="row">
-        <div className="blog-masonry-container">
-          {/* {% for class in site.classes %}
-            {% capture event_date %}{{ class.date | date: "%s" }}{% endcapture %}
-            {% if event_date > now_unix %}
-              {% assign count = count | plus: 1 %}
-              <Class />
-            {% endif %}
-          {% endfor %} */}
+    $('.blog-filters li').click(function() {
+      var current = $(this)
 
-          {/* {% if count == 0 %}
-            <p className="lead">
-              We currently don't have any classes scheduled. Join our newsletter to
-              be notified when we have some planned.
-            </p>
-          {% endif %} */}
-        </div>
-      </div>
-    </div>
-  </section>
-)
+      current.siblings('li').removeClass('active')
+      current.addClass('active')
+
+      var filterValue = current.attr('data-filter')
+      var container = current
+        .closest('.blog-masonry')
+        .find('.blog-masonry-container')
+      container.isotope({ filter: filterValue })
+    })
+  }
+
+  render() {
+    return (
+      <StaticQuery
+        query={graphql`
+          query Sessions {
+            allMarkdownRemark {
+              edges {
+                node {
+                  frontmatter {
+                    title
+                    date
+                    image_url
+                    meta_1
+                    meta_2
+                    price
+                    price_details
+                    description
+                  }
+                }
+              }
+            }
+          }
+        `}
+      >
+        {data => {
+          const sessions = data.allMarkdownRemark.edges
+            .map(({ node }) => node)
+            .filter(
+              ({ frontmatter }) => new Date(frontmatter.date) > Date.now()
+            )
+
+          return (
+            <section>
+              <div className="container">
+                <h1 id="classes">Upcoming classes</h1>
+
+                <p className="lead">
+                  If you are interested in any of our classes, please call the
+                  store (<span className="bold">250-314-0276</span>) or email us
+                  (<span className="bold">contact@knit2yarns.com</span>
+                  ). If you would like to see what the finished products look
+                  like, stop by the store and we'll be happy to show you.
+                  Materials not included in class price.
+                </p>
+                <br />
+
+                <div className="row">
+                  <div className="blog-masonry-container">
+                    {sessions.map(({ frontmatter }) => (
+                      <Session
+                        key={frontmatter.title + frontmatter.date}
+                        {...frontmatter}
+                      />
+                    ))}
+
+                    {sessions.length === 0 && (
+                      <p className="lead">
+                        We currently don't have any classes scheduled. Join our
+                        newsletter to be notified when we have some planned.
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </section>
+          )
+        }}
+      </StaticQuery>
+    )
+  }
+}
 
 export default Sessions
