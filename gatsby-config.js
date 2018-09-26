@@ -29,6 +29,13 @@ module.exports = {
         path: `${__dirname}/markdown/hero-images/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `hero-text`,
+        path: `${__dirname}/markdown/hero-text.md`,
+      },
+    },
     'gatsby-transformer-remark',
   ],
 }
