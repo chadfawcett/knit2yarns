@@ -24,3 +24,10 @@ collections:
           required: false,
         }
       - { label: 'Description', name: 'description', widget: 'text' }
+  - name: 'hero-images'
+    label: 'Banner Images'
+    folder: 'markdown/hero-images'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'image_url', widget: 'image' }
