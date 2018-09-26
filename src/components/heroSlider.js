@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
 class HeroSlider extends React.Component {
   componentDidMount() {
@@ -32,107 +33,60 @@ class HeroSlider extends React.Component {
 
   render() {
     return (
-      <section className="hero-slider">
-        <ul className="slides">
-          {/* <li className="overlay"> */}
-          <li>
-            <div className="background-image-holder">
-              <img
-                className="background-image"
-                alt="Hero"
-                src="img/banner1.jpg"
-              />
-            </div>
-            <div
-              className="container align-vertical"
-              style={{ paddingTop: 200 }}
-            >
-              <div className="row">
-                <div className="col-md-6 col-sm-9">
-                  {/* <h1 className="text-white">Knox Mountain Knit Company</h1>
+      <StaticQuery
+        query={graphql`
+          query HeroImages {
+            allMarkdownRemark(
+              filter: { fileAbsolutePath: { glob: "**/hero-images/*.md" } }
+            ) {
+              edges {
+                node {
+                  id
+                  frontmatter {
+                    image_url
+                  }
+                }
+              }
+            }
+          }
+        `}
+      >
+        {data => (
+          <section className="hero-slider">
+            <ul className="slides">
+              {/* <li className="overlay"> */}
+              {data.allMarkdownRemark.edges
+                .map(({ node }) => node)
+                .map(({ id, frontmatter }) => (
+                  <li key={id}>
+                    <div className="background-image-holder">
+                      <img
+                        className="background-image"
+                        alt="Hero"
+                        src={frontmatter.image_url}
+                      />
+                    </div>
+                    <div
+                      className="container align-vertical"
+                      style={{ paddingTop: 200 }}
+                    >
+                      <div className="row">
+                        <div className="col-md-6 col-sm-9">
+                          {/* <h1 className="text-white">Knox Mountain Knit Company</h1>
               <p className="text-white">Saturday October 14, Sasha and Willow of the
               Knox Mountain Knit Company will be sharing a trunk show at the
               shop. Come and be inspired by the beautiful samples they have made
               of their patterns!  1-4 p.m.  Bring your knitting and stay a
-              while</p> */}
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li className="">
-            <div className="background-image-holder">
-              <img
-                className="background-image"
-                alt="Hero"
-                src="img/banner2.jpg"
-              />
-            </div>
-            <div
-              className="container align-vertical"
-              style={{ paddingTop: 200 }}
-            >
-              <div className="row">
-                <div className="col-md-6 col-sm-9" />
-              </div>
-            </div>
-          </li>
-
-          <li className="">
-            <div className="background-image-holder">
-              <img
-                className="background-image"
-                alt="Hero"
-                src="img/banner3.jpg"
-              />
-            </div>
-            <div
-              className="container align-vertical"
-              style={{ paddingTop: 200 }}
-            >
-              <div className="row">
-                <div className="col-md-6 col-sm-9" />
-              </div>
-            </div>
-          </li>
-
-          <li className="">
-            <div className="background-image-holder">
-              <img
-                className="background-image"
-                alt="Hero"
-                src="img/banner4.jpg"
-              />
-            </div>
-            <div
-              className="container align-vertical"
-              style={{ paddingTop: 200 }}
-            >
-              <div className="row">
-                <div className="col-md-6 col-sm-9" />
-              </div>
-            </div>
-          </li>
-
-          <li className="">
-            <div className="background-image-holder">
-              <img
-                className="background-image"
-                alt="Hero"
-                src="img/banner5.jpg"
-              />
-            </div>
-            <div
-              className="container align-vertical"
-              style={{ paddingTop: 200 }}
-            >
-              <div className="row">
-                <div className="col-md-6 col-sm-9" />
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
+            while</p> */}
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+            </ul>
+          </section>
+        )}
+      </StaticQuery>
     )
   }
 }

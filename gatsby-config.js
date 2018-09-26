@@ -22,6 +22,13 @@ module.exports = {
         path: `${__dirname}/markdown/sessions/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `hero-images`,
+        path: `${__dirname}/markdown/hero-images/`,
+      },
+    },
     'gatsby-transformer-remark',
   ],
 }
