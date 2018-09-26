@@ -22,19 +22,19 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script src="js/jquery.min.js" />
-          <script src="js/jquery.plugin.min.js" />
-          <script src="js/bootstrap.min.js" />
-          <script src="js/jquery.flexslider-min.js" />
-          <script src="js/smooth-scroll.min.js" />
-          <script src="js/skrollr.min.js" />
-          <script src="js/spectragram.min.js" />
-          <script src="js/scrollReveal.min.js" />
-          <script src="js/isotope.min.js" />
-          <script src="js/twitterFetcher_v10_min.js" />
-          <script src="js/lightbox.min.js" />
-          <script src="js/jquery.countdown.min.js" />
-          <script src="js/scripts.js" />
+          <script src="/js/jquery.min.js" />
+          <script src="/js/jquery.plugin.min.js" />
+          <script src="/js/bootstrap.min.js" />
+          <script src="/js/jquery.flexslider-min.js" />
+          <script src="/js/smooth-scroll.min.js" />
+          <script src="/js/skrollr.min.js" />
+          <script src="/js/spectragram.min.js" />
+          <script src="/js/scrollReveal.min.js" />
+          <script src="/js/isotope.min.js" />
+          <script src="/js/twitterFetcher_v10_min.js" />
+          <script src="/js/lightbox.min.js" />
+          <script src="/js/jquery.countdown.min.js" />
+          <script src="/js/scripts.js" />
         </body>
       </html>
     )
