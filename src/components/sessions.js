@@ -37,6 +37,7 @@ class Sessions extends React.Component {
             ) {
               edges {
                 node {
+                  id
                   frontmatter {
                     title
                     date
@@ -76,11 +77,8 @@ class Sessions extends React.Component {
 
                 <div className="row">
                   <div className="blog-masonry-container">
-                    {sessions.map(({ frontmatter }) => (
-                      <Session
-                        key={frontmatter.title + frontmatter.date}
-                        session={frontmatter}
-                      />
+                    {sessions.map(({ id, frontmatter }) => (
+                      <Session key={id} session={frontmatter} />
                     ))}
 
                     {sessions.length === 0 && (
