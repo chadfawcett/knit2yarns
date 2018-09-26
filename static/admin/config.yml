@@ -33,6 +33,7 @@ collections:
       - { label: 'Image', name: 'image_url', widget: 'image' }
   - name: 'website-text'
     label: 'Website Text'
+    delete: false
     files:
       - name: 'banner-text'
         label: 'Banner Text'

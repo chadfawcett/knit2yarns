@@ -22,6 +22,18 @@
   opacity: 0.65;
 }
 
+.hero-slider .slides .hero-text p {
+  font-size: 1.2em;
+}
+
+.hero-slider .slides .hero-text h1 {
+  font-weight: 400;
+}
+
+.hero-slider .slides .hero-text * {
+  color: white !important;
+}
+
 header.signup:before {
   opacity: 0.4;
 }
@@ -54,10 +66,6 @@ header.signup:before {
   .sm-text-center {
     text-align: center;
   }
-}
-
-.hero-slider .slides p.hero-text {
-  font-size: 1.2em;
 }
 
 .text-light-gray {

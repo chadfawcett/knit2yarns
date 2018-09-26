@@ -35,8 +35,8 @@ class HeroSlider extends React.Component {
     return (
       <StaticQuery
         query={graphql`
-          query HeroImages {
-            allMarkdownRemark(
+          query Hero {
+            heroImages: allMarkdownRemark(
               filter: { fileAbsolutePath: { glob: "**/hero-images/*.md" } }
             ) {
               edges {
@@ -48,17 +48,25 @@ class HeroSlider extends React.Component {
                 }
               }
             }
+
+            heroText: markdownRemark(
+              fileAbsolutePath: { glob: "**/hero-text.md" }
+            ) {
+              html
+              excerpt
+            }
           }
         `}
       >
-        {data => (
-          <section className="hero-slider">
-            <ul className="slides">
-              {/* <li className="overlay"> */}
-              {data.allMarkdownRemark.edges
-                .map(({ node }) => node)
-                .map(({ id, frontmatter }) => (
-                  <li key={id}>
+        {data => {
+          const images = data.heroImages.edges.map(({ node }) => node)
+          const { html: heroTextHtml, excerpt } = data.heroText
+          console.log(excerpt)
+          return (
+            <section className="hero-slider">
+              <ul className="slides">
+                {images.map(({ id, frontmatter }) => (
+                  <li key={id} className={excerpt ? 'overlay' : ''}>
                     <div className="background-image-holder">
                       <img
                         className="background-image"
@@ -71,21 +79,20 @@ class HeroSlider extends React.Component {
                       style={{ paddingTop: 200 }}
                     >
                       <div className="row">
-                        <div className="col-md-6 col-sm-9">
-                          {/* <h1 className="text-white">Knox Mountain Knit Company</h1>
-              <p className="text-white">Saturday October 14, Sasha and Willow of the
-              Knox Mountain Knit Company will be sharing a trunk show at the
-              shop. Come and be inspired by the beautiful samples they have made
-              of their patterns!  1-4 p.m.  Bring your knitting and stay a
-            while</p> */}
-                        </div>
+                        <div
+                          className="col-md-6 col-sm-9 hero-text"
+                          dangerouslySetInnerHTML={{
+                            __html: heroTextHtml,
+                          }}
+                        />
                       </div>
                     </div>
                   </li>
                 ))}
-            </ul>
-          </section>
-        )}
+              </ul>
+            </section>
+          )
+        }}
       </StaticQuery>
     )
   }
