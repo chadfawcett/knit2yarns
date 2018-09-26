@@ -32,12 +32,15 @@ class Sessions extends React.Component {
       <StaticQuery
         query={graphql`
           query Sessions {
-            allMarkdownRemark {
+            allMarkdownRemark(
+              filter: { fileAbsolutePath: { glob: "**/sessions/*.md" } }
+            ) {
               edges {
                 node {
                   frontmatter {
                     title
                     date
+                    dateDiff: date(difference: "days")
                     image_url
                     meta_1
                     meta_2
@@ -54,9 +57,7 @@ class Sessions extends React.Component {
         {data => {
           const sessions = data.allMarkdownRemark.edges
             .map(({ node }) => node)
-            .filter(
-              ({ frontmatter }) => new Date(frontmatter.date) > Date.now()
-            )
+            .filter(({ frontmatter }) => frontmatter.dateDiff <= 0)
 
           return (
             <section>
