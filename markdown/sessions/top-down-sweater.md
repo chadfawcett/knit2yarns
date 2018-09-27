@@ -1,6 +1,6 @@
 ---
 title: Top Down Sweater
-date: '2017-05-18 18:00:00 -0800'
+date: 2017-05-19T02:00:00.000Z
 image_url: img/SweaterClass.jpg
 meta_1: '2 classes, 2 hours each'
 meta_2: 'May 18 and June 8 - 6:00pm-8:00pm'
