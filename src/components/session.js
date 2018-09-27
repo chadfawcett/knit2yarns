@@ -43,14 +43,15 @@ Session.propTypes = {
   }),
 }
 
-const previewStyles = {
-  width: 300,
-}
-
 export const SessionPreview = ({ entry }) => {
   const session = entry.toJS().data
   session.date = session.date.toString()
 
+  const previewStyles = {
+    width: 300,
+  }
+
   return <Session style={previewStyles} session={session} />
 }
+
 export default Session

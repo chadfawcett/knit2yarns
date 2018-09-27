@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 class HeroSlider extends React.Component {
@@ -32,70 +33,89 @@ class HeroSlider extends React.Component {
   }
 
   render() {
-    return (
-      <StaticQuery
-        query={graphql`
-          query Hero {
-            heroImages: allMarkdownRemark(
-              filter: { fileAbsolutePath: { glob: "**/hero-images/*.md" } }
-            ) {
-              edges {
-                node {
-                  id
-                  frontmatter {
-                    image_url
-                  }
-                }
-              }
-            }
+    const images = this.props.data.heroImages.edges.map(({ node }) => node)
+    const { html: heroTextHtml, excerpt } = this.props.data.heroText
 
-            heroText: markdownRemark(
-              fileAbsolutePath: { glob: "**/hero-text.md" }
-            ) {
-              html
-              excerpt
-            }
-          }
-        `}
-      >
-        {data => {
-          const images = data.heroImages.edges.map(({ node }) => node)
-          const { html: heroTextHtml, excerpt } = data.heroText
-          console.log(excerpt)
-          return (
-            <section className="hero-slider">
-              <ul className="slides">
-                {images.map(({ id, frontmatter }) => (
-                  <li key={id} className={excerpt ? 'overlay' : ''}>
-                    <div className="background-image-holder">
-                      <img
-                        className="background-image"
-                        alt="Hero"
-                        src={frontmatter.image_url}
-                      />
-                    </div>
-                    <div
-                      className="container align-vertical"
-                      style={{ paddingTop: 200 }}
-                    >
-                      <div className="row">
-                        <div
-                          className="col-md-6 col-sm-9 hero-text"
-                          dangerouslySetInnerHTML={{
-                            __html: heroTextHtml,
-                          }}
-                        />
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )
-        }}
-      </StaticQuery>
+    return (
+      <section className="hero-slider">
+        <ul className="slides">
+          {images.map(({ id, frontmatter }) => (
+            <li key={id} className={excerpt ? 'overlay' : ''}>
+              <div className="background-image-holder">
+                <img
+                  className="background-image"
+                  alt="Hero"
+                  src={frontmatter.image_url}
+                />
+              </div>
+              <div
+                className="container align-vertical"
+                style={{ paddingTop: 200 }}
+              >
+                <div className="row">
+                  <div
+                    className="col-md-6 col-sm-9 hero-text"
+                    dangerouslySetInnerHTML={{
+                      __html: heroTextHtml,
+                    }}
+                  />
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
     )
   }
 }
 
-export default HeroSlider
+HeroSlider.propTypes = {
+  data: PropTypes.shape({
+    heroImages: PropTypes.shape({
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            frontmatter: PropTypes.shape({
+              image_url: PropTypes.string.isRequired,
+            }),
+          }),
+        })
+      ),
+    }),
+    heroText: PropTypes.shape({
+      html: PropTypes.string,
+      excerpt: PropTypes.string,
+    }),
+  }),
+}
+
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query Hero {
+        heroImages: allMarkdownRemark(
+          filter: { fileAbsolutePath: { glob: "**/hero-images/*.md" } }
+        ) {
+          edges {
+            node {
+              id
+              frontmatter {
+                image_url
+              }
+            }
+          }
+        }
+
+        heroText: markdownRemark(
+          fileAbsolutePath: { glob: "**/hero-text.md" }
+        ) {
+          html
+          excerpt
+        }
+      }
+    `}
+  >
+    {data => <HeroSlider data={data} {...props} />}
+  </StaticQuery>
+)
