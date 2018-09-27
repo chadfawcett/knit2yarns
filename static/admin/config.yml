@@ -35,7 +35,7 @@ collections:
     label: 'Website Text'
     delete: false
     files:
-      - name: 'banner-text'
+      - name: 'hero-text'
         label: 'Banner Text'
         file: 'markdown/hero-text.md'
         fields:

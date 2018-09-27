@@ -33,11 +33,12 @@ class HeroSlider extends React.Component {
   }
 
   render() {
-    const images = this.props.data.heroImages.edges.map(({ node }) => node)
-    const { html: heroTextHtml, excerpt } = this.props.data.heroText
+    const { data, ...rest } = this.props
+    const images = data.heroImages.edges.map(({ node }) => node)
+    const { html: heroTextHtml, excerpt } = data.heroText
 
     return (
-      <section className="hero-slider">
+      <section className="hero-slider" {...rest}>
         <ul className="slides">
           {images.map(({ id, frontmatter }) => (
             <li key={id} className={excerpt ? 'overlay' : ''}>
@@ -118,4 +119,24 @@ export default props => (
   >
     {data => <HeroSlider data={data} {...props} />}
   </StaticQuery>
+)
+
+export const HeroTextPreview = ({ widgetFor }) => (
+  <section className="hero-slider">
+    <ul className="slides">
+      <li className="overlay">
+        <div
+          className="background-image-holder"
+          style={{ backgroundImage: 'url("/img/banner1.jpg")' }}
+        />
+        <div className="container align-vertical" style={{ paddingTop: 200 }}>
+          <div className="row">
+            <div className="col-md-6 col-sm-9 hero-text">
+              {widgetFor('body')}
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
 )

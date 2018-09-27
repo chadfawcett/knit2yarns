@@ -12,6 +12,8 @@ import '../css/custom.css'
 import '../css/netlify.css'
 
 import { SessionPreview } from '../components/session'
+import { HeroTextPreview } from '../components/heroSlider'
 
-//  Register the imported widget
+//  Register the imported widgets
 CMS.registerPreviewTemplate('sessions', SessionPreview)
+CMS.registerPreviewTemplate('hero-text', HeroTextPreview)
