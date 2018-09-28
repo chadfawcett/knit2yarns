@@ -84,25 +84,25 @@ $(document).ready(function() {
 
   // Margin first section for top bar
 
-  if (
-    !$('nav').hasClass('overlay-bar') &&
-    !$('nav').hasClass('contained-bar')
-  ) {
-    $('.main-container')
-      .first()
-      .css('margin-top', $('nav').outerHeight())
-  }
+  // if (
+  //   !$('nav').hasClass('overlay-bar') &&
+  //   !$('nav').hasClass('contained-bar')
+  // ) {
+  //   $('.main-container')
+  //     .first()
+  //     .css('margin-top', $('nav').outerHeight())
+  // }
 
-  $(window).resize(function() {
-    if (
-      !$('nav').hasClass('overlay-bar') &&
-      !$('nav').hasClass('contained-bar')
-    ) {
-      $('.main-container')
-        .first()
-        .css('margin-top', $('nav').outerHeight())
-    }
-  })
+  // $(window).resize(function() {
+  // if (
+  //     !$('nav').hasClass('overlay-bar') &&
+  //     !$('nav').hasClass('contained-bar')
+  //   ) {
+  //     $('.main-container')
+  //       .first()
+  //       .css('margin-top', $('nav').outerHeight())
+  //   }
+  // })
 
   // Pad first section for overlay bar
 
@@ -509,33 +509,33 @@ $(window).load(function() {
 
   // Isotope Projects
 
-  // $('.projects-container').isotope({
-  //   itemSelector: '.project',
-  //   layoutMode: 'fitRows',
-  // })
+  $('.projects-container').isotope({
+    itemSelector: '.project',
+    layoutMode: 'fitRows',
+  })
 
-  // $('.filters li').click(function() {
-  //   var current = $(this)
+  $('.filters li').click(function() {
+    var current = $(this)
 
-  //   current.siblings('li').removeClass('active')
-  //   current.addClass('active')
+    current.siblings('li').removeClass('active')
+    current.addClass('active')
 
-  //   var filterValue = current.attr('data-filter')
-  //   var container = current
-  //     .closest('.projects-wrapper')
-  //     .find('.projects-container')
-  //   container.isotope({ filter: filterValue })
-  // })
+    var filterValue = current.attr('data-filter')
+    var container = current
+      .closest('.projects-wrapper')
+      .find('.projects-container')
+    container.isotope({ filter: filterValue })
+  })
 
-  // // Isotope contained feature boxes
+  // Isotope contained feature boxes
 
-  // $('.contained-features-wrapper').isotope({
-  //   itemSelector: '.no-pad',
-  //   layoutMode: 'masonry',
-  //   masonry: {
-  //     gutter: 0,
-  //   },
-  // })
+  $('.contained-features-wrapper').isotope({
+    itemSelector: '.no-pad',
+    layoutMode: 'masonry',
+    masonry: {
+      gutter: 0,
+    },
+  })
 
   // Instagram Feed
 

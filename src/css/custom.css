@@ -93,3 +93,7 @@ header.signup:before {
 h1 {
   margin-bottom: 32px;
 }
+
+.top-bar {
+  position: static !important;
+}

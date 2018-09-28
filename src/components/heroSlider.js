@@ -9,16 +9,6 @@ class HeroSlider extends React.Component {
     //  Initialize hero slider
     $('.hero-slider').flexslider({})
 
-    //  Add padding to container depending on nav class
-    if (
-      !$('nav').hasClass('overlay-bar') &&
-      !$('nav').hasClass('contained-bar')
-    ) {
-      $('.main-container')
-        .first()
-        .css('margin-top', $('nav').outerHeight())
-    }
-
     //  Append .background-image-holder <img>'s as CSS backgrounds
     $('.background-image-holder').each(function() {
       var imgSrc = $(this)
