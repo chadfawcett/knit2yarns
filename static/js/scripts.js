@@ -539,20 +539,18 @@ $(window).load(function() {
 
   // Instagram Feed
 
-  // if ($('.instafeed').length) {
-  //   jQuery.fn.spectragram.accessData = {
-  //     accessToken: '7330925.ed55e39.5ab6f6595fe74ad3ae099be4e6782578',
-  //     clientID: 'ed55e39396f24e38884e8d556c9c93ab',
-  //   }
+  if ($('.instafeed').length) {
+    jQuery.fn.spectragram.accessData = {
+      accessToken: '7330925.ed55e39.5ab6f6595fe74ad3ae099be4e6782578',
+      clientID: 'ed55e39396f24e38884e8d556c9c93ab',
+    }
 
-  //   $('.instafeed').each(function() {
-  //     $(this)
-  //       .children('ul')
-  //       .spectragram('getUserFeed', {
-  //         query: $(this).attr('data-user-name'),
-  //       })
-  //   })
-  // }
+    $('.instafeed').each(function() {
+      $(this)
+        .children('ul')
+        .spectragram('getUserFeed', {size: 'small'})
+    })
+  }
 
   // if ($('#tweets').length) {
   //   $('#tweets').flexslider({ directionNav: false, controlNav: false })
