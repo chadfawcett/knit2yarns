@@ -97,3 +97,45 @@ h1 {
 .top-bar {
   position: static !important;
 }
+
+/* Add fallback for older browsers that don't support css grid */
+.insta-feed > * {
+  float: left;
+  width: 20%;
+}
+.insta-feed > *:nth-child(n + 6) {
+  display: none;
+}
+@supports (display: grid) {
+  .insta-feed > * {
+    width: auto;
+  }
+  .insta-feed > *:nth-child(n + 6) {
+    display: block;
+  }
+}
+
+.insta-feed {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: 1fr;
+  grid-auto-rows: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .insta-feed {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+
+.insta-feed__image {
+  background-size: cover;
+  background-position: center;
+}
+
+.insta-feed__image:before {
+  content: '';
+  padding-top: 100%;
+  display: block;
+}

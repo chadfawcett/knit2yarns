@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
@@ -11,7 +12,7 @@ import Contact from '../components/contact'
 import Map from '../components/map'
 import Footer from '../components/footer'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <Nav />
     <div className="main-container">
@@ -19,7 +20,7 @@ const IndexPage = () => (
       <NewsletterSignup />
       <About />
       <Sessions />
-      <Instagram />
+      <Instagram instagram={data.instagram} />
       <Contact />
       <Map />
     </div>
@@ -28,3 +29,19 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query Instagram {
+    instagram: allInstagramContent {
+      edges {
+        node {
+          images {
+            standard_resolution {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`
