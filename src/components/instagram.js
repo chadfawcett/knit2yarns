@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Instagram = ({ instagram, ...rest }) => {
-  const images = instagram.edges.map(
-    ({ node }) => node.images.standard_resolution.url
-  )
+const Instagram = ({ data, ...rest }) => {
+  const images = data.edges.map(({ node: { id, link, localImage } }) => ({
+    id,
+    link,
+    ...localImage.childImageSharp.fluid,
+  }))
 
   return (
     <section className="instagram-feed" {...rest}>
@@ -20,11 +22,14 @@ const Instagram = ({ instagram, ...rest }) => {
 
       <div className="insta-feed">
         {images.map(img => (
-          <div
-            key={img}
+          <a
+            key={img.id}
+            href={img.link}
             className="insta-feed__image"
-            style={{ backgroundImage: `url(${img})` }}
-          />
+            style={{ backgroundImage: `url(${img.src})` }}
+          >
+            {}
+          </a>
         ))}
       </div>
     </section>
@@ -32,13 +37,17 @@ const Instagram = ({ instagram, ...rest }) => {
 }
 
 Instagram.propTypes = {
-  instagram: PropTypes.shape({
+  data: PropTypes.shape({
     edges: PropTypes.arrayOf(
       PropTypes.shape({
         node: PropTypes.shape({
-          images: PropTypes.shape({
-            standard_resolution: PropTypes.shape({
-              url: PropTypes.string.isRequired,
+          id: PropTypes.string.isRequired,
+          link: PropTypes.string.isRequired,
+          localImage: PropTypes.shape({
+            childImageSharp: PropTypes.shape({
+              fluid: PropTypes.shape({
+                src: PropTypes.string.isRequired,
+              }),
             }),
           }),
         }),

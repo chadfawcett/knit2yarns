@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
       <NewsletterSignup />
       <About />
       <Sessions />
-      <Instagram instagram={data.instagram} />
+      <Instagram data={data.instagram} />
       <Contact />
       <Map />
     </div>
@@ -32,12 +32,16 @@ export default IndexPage
 
 export const query = graphql`
   query Instagram {
-    instagram: allInstagramContent {
+    instagram: allInstagramContent(limit: 7) {
       edges {
         node {
-          images {
-            standard_resolution {
-              url
+          id
+          link
+          localImage {
+            childImageSharp {
+              fluid(maxHeight: 500, maxWidth: 500, quality: 90) {
+                src
+              }
             }
           }
         }
