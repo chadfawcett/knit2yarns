@@ -3,28 +3,26 @@ import React from 'react'
 const NewsletterSignup = () => (
   <section id="newsletter" className="strip bg-primary">
     <div className="container">
-      <div className="row clearfix">
-        <form className="mail-list-signup">
-          <div className="col-sm-9 col-xs-12 pull-left clear-fix">
-            <h3 className="text-white pull-left">
-              <strong>Newsletter Signup.&nbsp;</strong>
-            </h3>
-            <input
-              type="text"
-              className="signup-email-field validate-required validate-email"
-              placeholder="Enter your email here"
-            />
-          </div>
+      <form className="mail-list-signup">
+        <div className="text-center content">
+          <h1 className="text-white">Newsletter Signup</h1>
+          <p className="lead">
+            Signup to our newsletter to be notified of upcoming classes and
+            sales.
+          </p>
 
-          <div className="col-sm-3 col-xs-12 pull-right text-right">
-            <input
-              type="submit"
-              className="btn btn-primary btn-filled"
-              value="Subscribe"
-            />
-          </div>
-        </form>
-      </div>
+          <input
+            type="text"
+            className="signup-email-field validate-required validate-email"
+            placeholder="Enter your email"
+          />
+          <input
+            type="submit"
+            className="btn btn-primary btn-filled"
+            value="Subscribe"
+          />
+        </div>
+      </form>
     </div>
     <iframe
       title="Mailchimp signup form"

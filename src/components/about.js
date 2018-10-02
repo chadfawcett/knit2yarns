@@ -27,7 +27,11 @@ const About = () => (
             Drop in knitting happens twice a week, Wednesday's at 9:30 a.m. and
             Saturdays at 10:00 a.m. Bring your current work in progress or come
             and get started on a new project. You can call the shop with any
-            questions <span className="bold">250 314 0276</span>.
+            questions{' '}
+            <span className="bold" style={{ whiteSpace: 'nowrap' }}>
+              250 314 0276
+            </span>
+            .
           </p>
         </div>
       </div>
