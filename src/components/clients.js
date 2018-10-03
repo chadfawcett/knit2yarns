@@ -8,30 +8,30 @@ import malabrigo from '../img/clients/malabrigo-white.png'
 import sirdar from '../img/clients/sirdar-white.png'
 
 const Clients = () => (
-  <section class="clients-2 bg-primary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 col-sm-4">
+  <section className="clients-2 bg-primary">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-2 col-sm-4">
           <img alt="Client Logo" src={madeincanada} />
         </div>
 
-        <div class="col-md-2 col-sm-4">
+        <div className="col-md-2 col-sm-4">
           <img alt="Client Logo" src={baaramewe} />
         </div>
 
-        <div class="col-md-2 col-sm-4">
+        <div className="col-md-2 col-sm-4">
           <img alt="Client Logo" src={sirdar} />
         </div>
 
-        <div class="col-md-2 col-sm-4">
+        <div className="col-md-2 col-sm-4">
           <img alt="Client Logo" src={berroco} />
         </div>
 
-        <div class="col-md-2 col-sm-4">
+        <div className="col-md-2 col-sm-4">
           <img alt="Client Logo" src={malabrigo} />
         </div>
 
-        <div class="col-md-2 col-sm-4">
+        <div className="col-md-2 col-sm-4">
           <img alt="Client Logo" src={blackcat} />
         </div>
       </div>
