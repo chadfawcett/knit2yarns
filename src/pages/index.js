@@ -12,12 +12,19 @@ import Contact from '../components/contact'
 import Map from '../components/map'
 import Footer from '../components/footer'
 
+import madeincanada from '../img/clients/madeincanada-white.png'
+import blackcat from '../img/clients/blackcat-white.png'
+import baaramewe from '../img/clients/baaramewe-white.png'
+import berroco from '../img/clients/berroco-white.png'
+import malabrigo from '../img/clients/malabrigo-white.png'
+import sirdar from '../img/clients/sirdar-white.png'
+
 const IndexPage = ({ data }) => (
   <Layout>
     <Nav />
     <div className="main-container">
       <HeroSlider />
-      <NewsletterSignup />
+      {/* <NewsletterSignup /> */}
       <About />
       <Sessions />
       <Instagram data={data.instagram} />

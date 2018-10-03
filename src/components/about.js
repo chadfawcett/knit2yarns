@@ -15,6 +15,24 @@ const About = () => (
     <div className="container">
       <div className="row">
         <div className="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 content clearfix">
+          <h1>Newsletter Signup</h1>
+          <p className="lead m-b-2">
+            Signup to our newsletter to be notified of upcoming classes and
+            sales.
+          </p>
+          <form className="mail-list-signup">
+            <input
+              type="text"
+              className="signup-email-field validate-required validate-email"
+              placeholder="Enter your email"
+            />
+            <input
+              type="submit"
+              className="btn btn-primary btn-filled"
+              value="Subscribe"
+            />
+          </form>
+
           <h1>About Knit2 Yarns</h1>
           <p className="lead">
             Knit2 Yarns is Kamloops' newest Yarn Shop. We have a great selection
