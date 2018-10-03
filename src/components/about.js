@@ -15,7 +15,7 @@ const About = () => (
     <div className="container">
       <div className="row">
         <div className="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 content clearfix">
-          <h1>Newsletter Signup</h1>
+          <h1 id="newsletter">Newsletter Signup</h1>
           <p className="lead m-b-2">
             Signup to our newsletter to be notified of upcoming classes and
             sales.
