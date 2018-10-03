@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Linkify from 'linkifyjs/react'
 
 const Session = ({ session, ...rest }) => (
   <div className="col-md-4 col-sm-6 blog-masonry-item branding" {...rest}>
@@ -21,7 +22,7 @@ const Session = ({ session, ...rest }) => (
           {parseFloat(session.price) > 0 && (
             <span className="price">${session.price} </span>
           )}
-          {session.price_details}
+          {session.price_details && <Linkify>{session.price_details}</Linkify>}
         </p>
         <div className="post-meta">
           <span className="sub alt-font">{session.meta_1}s</span>
