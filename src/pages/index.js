@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Nav from '../components/nav'
 import HeroSlider from '../components/heroSlider'
-import NewsletterSignup from '../components/newsletterSignup'
+import Clients from '../components/clients'
 import About from '../components/about'
 import Sessions from '../components/sessions'
 import Instagram from '../components/instagram'
@@ -12,19 +12,12 @@ import Contact from '../components/contact'
 import Map from '../components/map'
 import Footer from '../components/footer'
 
-import madeincanada from '../img/clients/madeincanada-white.png'
-import blackcat from '../img/clients/blackcat-white.png'
-import baaramewe from '../img/clients/baaramewe-white.png'
-import berroco from '../img/clients/berroco-white.png'
-import malabrigo from '../img/clients/malabrigo-white.png'
-import sirdar from '../img/clients/sirdar-white.png'
-
 const IndexPage = ({ data }) => (
   <Layout>
     <Nav />
     <div className="main-container">
       <HeroSlider />
-      {/* <NewsletterSignup /> */}
+      <Clients />
       <About />
       <Sessions />
       <Instagram data={data.instagram} />
