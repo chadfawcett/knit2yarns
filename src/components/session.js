@@ -18,7 +18,9 @@ const Session = ({ session, ...rest }) => (
         <h2>{session.title}</h2>
         <p>{session.description}</p>
         <p className="price-details">
-          <span className="price">${session.price}</span>{' '}
+          {parseFloat(session.price) > 0 && (
+            <span className="price">${session.price} </span>
+          )}
           {session.price_details}
         </p>
         <div className="post-meta">
