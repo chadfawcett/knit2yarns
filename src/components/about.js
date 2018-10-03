@@ -35,8 +35,8 @@ const About = () => (
 
           <h1>About Knit2 Yarns</h1>
           <p className="lead">
-            Knit2 Yarns is Kamloops' newest Yarn Shop. We have a great selection
-            of yarns and notions for all your knitting needs. We carry
+            Knit2 Yarns is Kamloops' destination yarn shop. We have a great
+            selection of yarns and notions for all your knitting needs. We carry
             Malabrigo, Noro, Sweet Georgia, Smith and Ewe, Cascade, Berroco, and
             much more!
           </p>
