@@ -3,13 +3,10 @@ import React from 'react'
 const About = () => (
   <section id="about" className="side-image text-heavy clearfix">
     <div className="image-container col-md-5 col-sm-3 pull-left">
-      <div className="background-image-holder">
-        <img
-          className="background-image"
-          alt="Background"
-          src="img/side1.jpg"
-        />
-      </div>
+      <div
+        className="background-image-holder"
+        style={{ backgroundImage: 'url(img/side1.jpg)' }}
+      />
     </div>
 
     <div className="container">

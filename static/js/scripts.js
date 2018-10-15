@@ -174,7 +174,7 @@ $(document).ready(function() {
 
   // Slider Initializations
 
-  $('.hero-slider').flexslider({})
+  // $('.hero-slider').flexslider({})
   $('.image-slider').flexslider({ animation: 'slide' })
   $('.testimonials-slider').flexslider({ directionNav: false })
 
@@ -213,16 +213,16 @@ $(document).ready(function() {
 
   // Append .background-image-holder <img>'s as CSS backgrounds
 
-  $('.background-image-holder').each(function() {
-    var imgSrc = $(this)
-      .children('img')
-      .attr('src')
-    $(this).css('background', 'url("' + imgSrc + '")')
-    $(this)
-      .children('img')
-      .hide()
-    $(this).css('background-position', '50% 0%')
-  })
+  // $('.background-image-holder').each(function() {
+  //   var imgSrc = $(this)
+  //     .children('img')
+  //     .attr('src')
+  //   $(this).css('background', 'url("' + imgSrc + '")')
+  //   $(this)
+  //     .children('img')
+  //     .hide()
+  //   $(this).css('background-position', '50% 0%')
+  // })
 
   // Accordion
 

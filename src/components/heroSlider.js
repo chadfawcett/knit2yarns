@@ -24,7 +24,7 @@ class HeroSlider extends React.Component {
                 className="background-image-holder"
                 style={{ backgroundImage: `url('${frontmatter.image_url}')` }}
               />
-              {heroTextHtml && (
+              {excerpt && (
                 <div
                   className="container align-vertical"
                   style={{ paddingTop: 200 }}
