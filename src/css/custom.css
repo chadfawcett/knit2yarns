@@ -18,6 +18,21 @@
   color: inherit;
 }
 
+.hero-slider .slides li {
+  width: 100%;
+  float: left;
+  margin-right: -100%;
+  position: relative;
+  opacity: 0;
+  display: block;
+  z-index: 1;
+}
+
+.hero-slider .slides li:first-child {
+  opacity: 1;
+  z-index: 2;
+}
+
 .hero-slider .slides li.overlay:before {
   opacity: 0.65;
 }

@@ -8,18 +8,6 @@ class HeroSlider extends React.Component {
 
     //  Initialize hero slider
     $('.hero-slider').flexslider({})
-
-    //  Append .background-image-holder <img>'s as CSS backgrounds
-    $('.background-image-holder').each(function() {
-      var imgSrc = $(this)
-        .children('img')
-        .attr('src')
-      $(this).css('background', 'url("' + imgSrc + '")')
-      $(this)
-        .children('img')
-        .hide()
-      $(this).css('background-position', '50% 0%')
-    })
   }
 
   render() {
@@ -32,26 +20,25 @@ class HeroSlider extends React.Component {
         <ul className="slides">
           {images.map(({ id, frontmatter }) => (
             <li key={id} className={excerpt ? 'overlay' : ''}>
-              <div className="background-image-holder">
-                <img
-                  className="background-image"
-                  alt="Hero"
-                  src={frontmatter.image_url}
-                />
-              </div>
               <div
-                className="container align-vertical"
-                style={{ paddingTop: 200 }}
-              >
-                <div className="row">
-                  <div
-                    className="col-md-6 col-sm-9 hero-text"
-                    dangerouslySetInnerHTML={{
-                      __html: heroTextHtml,
-                    }}
-                  />
+                className="background-image-holder"
+                style={{ backgroundImage: `url('${frontmatter.image_url}')` }}
+              />
+              {heroTextHtml && (
+                <div
+                  className="container align-vertical"
+                  style={{ paddingTop: 200 }}
+                >
+                  <div className="row">
+                    <div
+                      className="col-md-6 col-sm-9 hero-text"
+                      dangerouslySetInnerHTML={{
+                        __html: heroTextHtml,
+                      }}
+                    />
+                  </div>
                 </div>
-              </div>
+              )}
             </li>
           ))}
         </ul>
