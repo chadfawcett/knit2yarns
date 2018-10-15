@@ -8,6 +8,20 @@
   margin-bottom: 25px;
 }
 
+.nav-menu {
+  background-color: #8a4d9c;
+}
+
+.nav-menu .menu li a {
+  color: #ffffff;
+  opacity: 0.75;
+}
+
+.nav-menu .menu li a:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
 .nav-container__sub-header {
   line-height: 20px;
   margin-bottom: 20px;

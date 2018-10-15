@@ -6,7 +6,7 @@ import logo from '../img/knit2-logo-purple.png'
 const Nav = () => (
   <div className="nav-container">
     <nav className="centered-logo top-bar">
-      <div className="container">
+      <div>
         <div className="row">
           <div className="col-sm-12 text-center">
             <a href="index.html">
