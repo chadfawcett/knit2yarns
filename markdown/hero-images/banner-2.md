@@ -1,5 +1,5 @@
 ---
 title: Banner 2
-image_url: /img/uploads/banner2.jpg
+image_url: /img/uploads/img_0009.jpeg
 ---
 
