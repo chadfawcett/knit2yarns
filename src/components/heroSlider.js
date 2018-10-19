@@ -7,7 +7,7 @@ class HeroSlider extends React.Component {
     const $ = window.$
 
     //  Initialize hero slider
-    $('.hero-slider').flexslider({})
+    $('.hero-slider').flexslider({ slideshowSpeed: 5000 })
   }
 
   render() {
