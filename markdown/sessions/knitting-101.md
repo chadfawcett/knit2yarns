@@ -2,7 +2,7 @@
 title: Knitting 101
 date: 2018-10-25T18:08:09.460Z
 image_url: /img/uploads/pink-hat.jpg
-meta_1: ' '
+meta_1: Plus supplies
 meta_2: 'Nov. 20, 6 - 8:30pm'
 price: '25'
 price_details: ''
