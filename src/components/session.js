@@ -49,6 +49,8 @@ Session.propTypes = {
 export const SessionPreview = ({ entry }) => {
   const session = entry.toJS().data
   session.date = session.date.toString()
+  session.title = session.title || ''
+  session.description = session.description || ''
 
   const previewStyles = {
     width: 300,
