@@ -25,7 +25,7 @@ const Session = ({ session, ...rest }) => (
           {session.price_details && <Linkify>{session.price_details}</Linkify>}
         </p>
         <div className="post-meta">
-          <span className="sub alt-font">{session.meta_1}s</span>
+          <span className="sub alt-font">{session.meta_1}</span>
           <span className="sub alt-font">{session.meta_2}</span>
         </div>
       </div>
