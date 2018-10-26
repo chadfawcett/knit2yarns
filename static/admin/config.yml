@@ -11,11 +11,10 @@ collections:
     folder: 'markdown/sessions'
     create: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Start Date', name: 'date', widget: 'datetime' }
       - { label: 'Image', name: 'image_url', widget: 'image', required: false }
-      - { label: 'Meta 1', name: 'meta_1', widget: 'string' }
-      - { label: 'Meta 2', name: 'meta_2', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
       - {
           label: 'Price',
           name: 'price',
@@ -29,7 +28,8 @@ collections:
           widget: 'string',
           required: false,
         }
-      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Meta 1', name: 'meta_1', widget: 'string' }
+      - { label: 'Meta 2', name: 'meta_2', widget: 'string' }
   - name: 'hero-images'
     label: 'Banner Images'
     folder: 'markdown/hero-images'
