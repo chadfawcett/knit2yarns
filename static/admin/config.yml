@@ -11,7 +11,7 @@ collections:
     folder: 'markdown/sessions'
     create: true
     fields:
-      - { label: 'Start Date', name: 'date', widget: 'datetime' }
+      - { label: 'Class Start Date', name: 'date', widget: 'datetime' }
       - { label: 'Image', name: 'image_url', widget: 'image', required: false }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
