@@ -1,6 +1,6 @@
 ---
 title: Knitting 101
-date: 2018-11-20T19:08:00.000Z
+date: 2018-10-26T18:08:00.000Z
 image_url: /img/uploads/pink-hat.jpg
 meta_1: '1 CLASS, 2.5 HOUR'
 meta_2: 'Nov. 20, 6 - 8:30pm'
