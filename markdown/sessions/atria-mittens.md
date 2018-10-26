@@ -5,7 +5,7 @@ image_url: /img/uploads/mitts-.jpg
 meta_1: ' '
 meta_2: Nov. 6 from 6-8 p.m.
 price: 28
-price_details: Includes paternities
+price_details: Includes pattern
 description: >-
   These mitts are a good first mitten project. The I-cord edging adds that
   little something extra
