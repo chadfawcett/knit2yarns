@@ -1,6 +1,6 @@
 ---
 date: 2019-01-24T15:44:06.718Z
-title: 'Drop, Think, Frog '
+title: 'Drop, Tink, Frog '
 description: >-
   Dropping a stitch doesn't have to be the end of your knitting! Come and learn
   how to fix these mistakes.
