@@ -1,14 +1,12 @@
 ---
-title: 'Steek '
-date: 2018-11-17T18:00:08-08:00
-image_url: null
-meta_1: '1 Class, 2 Hours'
-meta_2: 'Nov. 17, 1-3 PM'
+date: 2019-03-24T01:00:08.000Z
+title: Steeking
+description: >-
+  Knit in the round, uninterrupted, then cut your work. Not as scary as it
+  sounds.
 price: 20
 price_details: Plus supplies
-description: >-
-  What? Cut my knitting??  Yes.  This class will teach you how to steek and add
-  a button band or how to add a zipper.
-
-  (picture coming soon)
+meta_1: 'March 23, 1 - 3 p.m.'
+meta_2: ' '
 ---
+
