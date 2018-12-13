@@ -6,6 +6,6 @@ description: >-
   how to fix these mistakes.
 price: 20
 meta_1: '1 Class, 2 Hours'
-meta_2: 'Jan. 24, 6-9 p.m.'
+meta_2: 'Jan. 24, 6-8 p.m.'
 ---
 
