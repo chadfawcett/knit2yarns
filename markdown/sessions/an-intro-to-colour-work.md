@@ -1,5 +1,6 @@
 ---
 date: 2019-02-17T06:43:05.201Z
+image_url: /img/uploads/an-intro-to-colourwork.jpg
 title: An Intro to Colour-work
 description: >-
   A hat is the perfect first project to introduce you to knitting with more than
