@@ -4,7 +4,7 @@ title: Beginner Crochet
 description: >-
   This class is for the very beginner. Basic stitches will be covered as you
   create a dishcloth
-price: 34
+price: 20
 price_details: Plus supplies
 meta_1: 'Feb. 21, 6-8p.m.'
 meta_2: ' '
