@@ -6,7 +6,7 @@ description: >-
   warmers. A beautiful winter accessory.
 price: 30
 price_details: Plus supplies
-meta_1: 'Jan. 30 and 29, 6-9 p.m.'
+meta_1: 'Jan. 30, 6-9 p.m.'
 meta_2: ' '
 ---
 
