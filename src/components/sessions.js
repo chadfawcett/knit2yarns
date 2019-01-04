@@ -29,6 +29,8 @@ class Sessions extends React.Component {
   }
 
   render() {
+    //  Gatsby does not allow us to query our date using less than/greater than
+    //  so we have to do this dynamically.
     const sessions = this.props.data.sessions.edges
       .map(({ node }) => node)
       .filter(({ frontmatter }) => parseInt(frontmatter.dateDiff) <= 0)
