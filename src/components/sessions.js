@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import compareAsc from 'date-fns/compare_asc'
 
 import Session from './session'
 
@@ -33,7 +34,9 @@ class Sessions extends React.Component {
     //  so we have to do this dynamically.
     const sessions = this.props.data.sessions.edges
       .map(({ node }) => node)
-      .filter(({ frontmatter }) => parseInt(frontmatter.dateDiff) <= 0)
+      .filter(
+        ({ frontmatter }) => compareAsc(frontmatter.date, Date.now()) >= 0
+      )
 
     return (
       <section>
