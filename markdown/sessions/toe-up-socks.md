@@ -1,6 +1,6 @@
 ---
 date: 2019-01-29T22:34:37.464Z
-image_url: /img/uploads/img_7755.jpg
+image_url: ''
 title: Toe up Socks
 description: >-
   In this class you will learn to cast on, a short row heel, plus this method
