@@ -5,6 +5,8 @@ backend:
 media_folder: static/img/uploads
 public_folder: /img/uploads
 
+site_url: https://knit2yarns.com
+
 collections:
   - name: 'sessions'
     label: 'Classes'
@@ -45,4 +47,11 @@ collections:
         label: 'Banner Text'
         file: 'markdown/hero-text.md'
         fields:
-          - { label: 'Banner Text', name: 'body', widget: 'markdown' }
+          - name: 'hidden'
+            default: ''
+            required: false
+            widget: 'hidden'
+          - label: 'Banner Text'
+            name: 'body'
+            widget: 'markdown'
+            required: false
