@@ -43,6 +43,9 @@ collections:
     files:
       - name: 'hero-text'
         label: 'Banner Text'
-        file: 'markdown/hero-text.md'
+        file: 'markdown/hero-text.yml'
         fields:
-          - { label: 'Banner Text', name: 'body', widget: 'markdown' }
+          - label: 'Banner Text'
+            name: 'body'
+            widget: 'markdown'
+            required: false
