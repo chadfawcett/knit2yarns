@@ -109,7 +109,7 @@ export const HeroTextPreview = ({ widgetFor }) => (
         <div className="container align-vertical" style={{ paddingTop: 200 }}>
           <div className="row">
             <div className="col-md-6 col-sm-9 hero-text">
-              {widgetFor('text')}
+              {widgetFor('body')}
             </div>
           </div>
         </div>

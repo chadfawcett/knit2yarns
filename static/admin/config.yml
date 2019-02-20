@@ -47,7 +47,11 @@ collections:
         label: 'Banner Text'
         file: 'markdown/hero-text.md'
         fields:
+          - name: 'hidden'
+            default: ''
+            required: false
+            widget: 'hidden'
           - label: 'Banner Text'
-            name: 'text'
+            name: 'body'
             widget: 'markdown'
             required: false
