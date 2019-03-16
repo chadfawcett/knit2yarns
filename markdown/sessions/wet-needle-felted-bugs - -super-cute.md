@@ -1,6 +1,6 @@
 ---
 date: 2019-05-22T18:41:21.520Z
-title: "\_ Wet needle felted bugs\_ \_ Super cute!"
+title: "Wet needle felted bugs\_ \_ Super cute!"
 description: ' '
 price: 25
 price_details: ' '
