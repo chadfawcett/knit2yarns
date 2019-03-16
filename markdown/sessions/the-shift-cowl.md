@@ -1,14 +1,12 @@
 ---
-date: 2019-03-02T21:09:57.544Z
-image_url: /img/uploads/img_7751.jpg
+date: 2019-04-13T18:11:41.536Z
 title: The Shift Cowl
-description: >
-  This gorgeous cowl is Colourwork using slipped stitches. An easier way to
-  achieve the same look.
-   
+description: >-
+  This cowl is colour work without the fuss. Slip stitches create the pattern in
+  this very popular knit.
 price: 25
-price_details: 'Plus supplies, Pattern purchase required'
-meta_1: ' '
-meta_2: 'March 2,  1:00- 3:30 p.m.'
+price_details: "(\_Pattern purchase required )"
+meta_1: "April 13\_ 1-3:30"
+meta_2: ' '
 ---
 
