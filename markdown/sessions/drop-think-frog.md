@@ -1,11 +1,9 @@
 ---
-date: 2019-01-24T15:44:06.718Z
-title: 'Drop, Tink, Frog '
-description: >-
-  Dropping a stitch doesn't have to be the end of your knitting! Come and learn
-  how to fix these mistakes.
+date: 2019-05-09T18:34:50.986Z
+title: 'Drop, Think, Frog,'
+description: "Back by popular demand.\_ You don’t have to rip your project out once you know how to fix those little mistakes."
 price: 20
-meta_1: '1 Class, 2 Hours'
-meta_2: 'Jan. 24, 6-8 p.m.'
+meta_1: "May 9\_ from 6-8 p.m."
+meta_2: ' '
 ---
 
