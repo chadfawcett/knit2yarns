@@ -7,7 +7,7 @@ description: >-
   for easter.
 price: 20
 price_details: "(\_Kits will be available )"
-meta_1: ' '
-meta_2: "March 28\_ from 6-8 p.m."
+meta_1: "March 28\_ from 6-8 p.m."
+meta_2: ' '
 ---
 
