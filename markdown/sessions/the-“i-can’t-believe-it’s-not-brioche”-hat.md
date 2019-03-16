@@ -1,5 +1,6 @@
 ---
 date: 2019-04-11T18:00:44.610Z
+image_url: /img/uploads/not-brioche”-hat.jpg
 title: The “I Can’t Believe it’s not Brioche” hat.
 description: "Does Brioche make you anxious?\_ This technique gives you the look, without the stress!\_ You’ll want to make more than one.\n"
 price: 25
