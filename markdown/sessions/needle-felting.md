@@ -1,5 +1,6 @@
 ---
 date: 2019-04-17T18:13:10.178Z
+image_url: /img/uploads/bee.jpg
 title: Needle Felting
 description: "Bee and Bird plant picks\_ This is geared to the beginner."
 price: 25
