@@ -1,5 +1,6 @@
 ---
 date: 2019-04-13T18:11:41.536Z
+image_url: /img/uploads/the-shift.jpg
 title: The Shift Cowl
 description: >-
   This cowl is colour work without the fuss. Slip stitches create the pattern in
