@@ -1,6 +1,6 @@
 ---
 date: 2019-05-08T18:33:40.501Z
-title: Needle Felted LandscapesBeginner class.
+title: Needle Felted Landscapes Beginner class.
 description: ' '
 price: 20
 price_details: ' '
