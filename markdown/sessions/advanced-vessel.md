@@ -7,7 +7,7 @@ description: >+
   like to make something a bit more challenging. This is your chance to let your
   creativity loose! 
 
-price: 30
+price: 35
 meta_1: 'August 7, from 6-9 p.m.'
 meta_2: ' Three Hours'
 ---
