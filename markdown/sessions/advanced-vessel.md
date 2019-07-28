@@ -1,5 +1,5 @@
 ---
-date: 2019-08-08T04:03:58.415Z
+date: 2019-08-15T04:03:58.415Z
 image_url: /img/uploads/advanced-vessel-.jpg
 title: Advanced vessel
 description: >+
@@ -8,7 +8,7 @@ description: >+
   creativity loose! 
 
 price: 35
-meta_1: 'August 7, from 6-9 p.m.'
+meta_1: 'August 14, from 6-9 p.m.'
 meta_2: ' Three Hours'
 ---
 
