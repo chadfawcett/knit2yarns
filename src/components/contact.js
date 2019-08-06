@@ -18,7 +18,7 @@ const Contact = () => (
         <div className="col-sm-5 text-center">
           <h5 className="m-t-4">Hours</h5>
           <p>
-            Tue-Fri 9:30am-5:30pm
+            Mon-Fri 9:30am-5:30pm
             <br />
             Sat 10:00am-5:00pm
           </p>
