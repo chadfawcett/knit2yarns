@@ -5,7 +5,7 @@ title: Advanced vessel
 description: >+
   This is a class for those who have some experience with wet felting, but would
   like to make something a bit more challenging. This is your chance to let your
-  creativity loose! 
+  creativity loose!  
 
 price: 35
 meta_1: 'August 14, from 6-9 p.m.'
