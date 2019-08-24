@@ -1,13 +1,13 @@
 ---
-date: 2019-04-13T18:11:41.536Z
-image_url: /img/uploads/the-shift.jpg
+date: 2019-10-10T18:11:41.536Z
+image_url: /img/uploads/img_8935.jpg
 title: The Shift Cowl
 description: >-
   This cowl is colour work without the fuss. Slip stitches create the pattern in
   this very popular knit.
-price: 25
+price: 20
 price_details: "(\_Pattern purchase required )"
-meta_1: "April 13\_ 1-3:30"
+meta_1: "Oct 10,\_ 6:00 - 8:00pm"
 meta_2: ' '
 ---
 
