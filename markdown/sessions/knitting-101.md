@@ -1,11 +1,12 @@
 ---
-date: 2019-05-02T18:14:34.250Z
+date: 2019-09-18T18:14:34.250Z
+image_url: /img/uploads/img_8949.jpg
 title: Knitting 101
 description: >-
-  This class is designed for the very beginner. Cast on and basic knit stitches
-  will be covered while you make a scarf.
-price: 40
-meta_1: "April\_ 25 and May 2\_ from 6-8 p.m."
+  Learn how to cast on, knit and purl while making a dishcloth. Geared for the
+  real beginner 
+price: 20
+meta_1: 'Sep. 18,  6-8 p.m.'
 meta_2: ' '
 ---
 
