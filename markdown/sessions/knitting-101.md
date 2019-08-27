@@ -6,7 +6,7 @@ description: >-
   Learn how to cast on, knit and purl while making a dishcloth. Geared for the
   real beginner 
 price: 20
-meta_1: 'Sep. 18,  6-8 p.m.'
+meta_1: 'Sept. 18,  6-8 p.m.'
 meta_2: ' '
 ---
 
