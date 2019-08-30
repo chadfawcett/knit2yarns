@@ -56,7 +56,7 @@ class Sessions extends React.Component {
           <div className="row">
             <div className="blog-masonry-container">
               {sessions.map(({ id, frontmatter }) => (
-                <Session key={id} session={frontmatter} />
+                <Session key={frontmatter.title + id} session={frontmatter} />
               ))}
 
               {sessions.length === 0 && (
