@@ -1,5 +1,6 @@
 ---
 date: 2019-12-13T05:00:57.947Z
+image_url: /img/uploads/plump-shawl.jpg
 title: Plumpy Shawl
 description: >-
   Andrea Mowry always designs the squishiest shawls! This dk weight shawl has
