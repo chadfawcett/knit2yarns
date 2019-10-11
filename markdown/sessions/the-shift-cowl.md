@@ -1,5 +1,5 @@
 ---
-date: 2019-10-10T18:11:41.536Z
+date: 2019-10-11T18:11:41.536Z
 image_url: /img/uploads/img_8935.jpg
 title: The Shift Cowl
 description: >-
