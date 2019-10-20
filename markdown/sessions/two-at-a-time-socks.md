@@ -1,5 +1,5 @@
 ---
-date: 2019-11-21T05:07:12.240Z
+date: 2019-11-22T05:07:12.240Z
 title: Two at a time Socks
 description: >-
   Never have second sock syndrome again!  They will both be done at the same
