@@ -1,5 +1,5 @@
 ---
-date: 2019-10-27T03:36:05.928Z
+date: 2019-10-27T05:00:05.928Z
 title: Blocking your knits
 description: >-
   There are many reasons why blocking your knits is beneficial. Find out how to
