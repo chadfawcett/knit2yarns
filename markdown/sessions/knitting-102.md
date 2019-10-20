@@ -1,5 +1,6 @@
 ---
 date: 2019-11-28T05:25:31.094Z
+image_url: /img/uploads/img_9253.jpg
 title: Knitting 102
 description: >-
   Do you already know how to do basic knitting? Take it to the next level by
