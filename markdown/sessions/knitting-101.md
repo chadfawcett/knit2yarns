@@ -1,12 +1,12 @@
 ---
-date: 2019-11-08T06:00:00.000Z
-image_url: /img/uploads/img_9237.jpg
+date: 2020-02-10T06:02:38.011Z
 title: Knitting 101
 description: >-
-  Learn how to cast on, knit and purl while making a dishcloth. Geared for the
-  real beginner 
-price: 20
-meta_1: 'Nov. 7,  6-8 p.m.'
+  Winter is the perfect time to learn how to knit.  Get started with this simple
+  dishcloth and you will be on your way.
+price: 30
+price_details: ' '
+meta_1: Saturday Feb 8  1-4
 meta_2: ' '
 ---
 
