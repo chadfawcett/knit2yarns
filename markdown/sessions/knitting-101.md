@@ -1,5 +1,6 @@
 ---
 date: 2020-02-10T06:02:38.011Z
+image_url: /img/uploads/dish-cloths.png
 title: Knitting 101
 description: >-
   Winter is the perfect time to learn how to knit.  Get started with this simple
