@@ -1,5 +1,5 @@
 ---
-date: 2020-03-12T21:55:35.782Z
+date: 2020-03-13T21:55:35.782Z
 title: All the Bind Offs
 description: >-
   Super stretchy bind off , I-cord bind off ,  so many to choose from! Another
