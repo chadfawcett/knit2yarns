@@ -1,5 +1,5 @@
 ---
-title: Winter Window Display
+title: a Winter Window Display
 image_url: /img/uploads/img_9668-2.jpg
 ---
 
