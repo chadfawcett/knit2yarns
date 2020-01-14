@@ -8,7 +8,7 @@ description: >-
   into a monthly draw for each completed line, or maybe you will fill a card
   later in the year. More details in store 
 price: 0
-price_details: ' '
+price_details: ' Free'
 meta_1: ' '
 meta_2: ' '
 ---
