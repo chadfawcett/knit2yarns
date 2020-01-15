@@ -1,11 +1,12 @@
 ---
-date: 2019-09-20T02:24:15.675Z
-image_url: /img/uploads/img_8839.jpg
-title: Crochet bucket
-description: ' A knowledge of single crochet is required to make this bucket. . It can hold everything from yarn to  baby items.  What a great gift!  '
-price: 20
-price_details: Supplies extra
-meta_1: 'Sept. 19, 6 - 8pm'
+date: 2020-03-07T04:46:21.131Z
+title: Crochet Bucket
+description: >-
+  This adorable bucket can be used for so many things!  Join Kim as she guides
+  you through her own design. 
+price: 30
+price_details: ' '
+meta_1: 'Mar 5, 6 - 9 pm'
 meta_2: ' '
 ---
 
