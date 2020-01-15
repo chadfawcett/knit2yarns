@@ -1,5 +1,6 @@
 ---
 date: 2020-03-02T06:05:11.482Z
+image_url: /img/uploads/img_9671.jpeg
 title: 'Knitting 102: Boardwalk Hat'
 description: >-
   After you know the basic knit stitch, you can learn to knit in the round and
