@@ -1,6 +1,6 @@
 ---
 hidden: ''
 ---
-# **INVENTORY SALE  Feb 27, 28, and 29**    
+# **CLOSED FOR INVENTORY.** 
 
-# **30% off almost everything**
+# **Re-open Friday, March 6 2020**
