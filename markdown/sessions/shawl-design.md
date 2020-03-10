@@ -5,7 +5,7 @@ title: Shawl Design
 description: >-
   Have you ever wondered about all the different shawl shapes?  Crescent,
   Triangular, or
-   A Symmetrical are a few.  You can learn how to design your own Shawl and have bragging rights !
+   Asymmetrical are a few.  You can learn how to design your own Shawl and have bragging rights !
 price: 30
 price_details: ' '
 meta_1: 'April 4 2020, 1 - 4pm'
