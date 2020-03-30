@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Knit2 Yarns - Kamloops destination yarn shop',
-    facebook_username: 'Knit2 - Yarns - 1683481525241962',
+    facebook_username: 'knit2yarnskamloops',
     instagram_username: 'carla_knit2yarns',
     pinterest_username: 'crfawcett1',
     description:
