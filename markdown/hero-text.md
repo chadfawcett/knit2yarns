@@ -1,7 +1,7 @@
 ---
 hidden: ''
 ---
-# Store Hours starting Tue. May 26/2020
+# Store Hours starting Tuesday May 26/2020
 
 # Tuesday to Friday, 9:30am to 5:30pm
 
