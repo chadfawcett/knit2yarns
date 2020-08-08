@@ -1,9 +1,10 @@
 ---
-date: 2019-05-07T18:24:53.878Z
-title: Cables.
-description: "Not as hard as you might think\_ You’ll be making several little samples that you can keep for reference."
+date: 2019-11-10T06:00:00.000Z
+image_url: /img/uploads/cable-swatch.jpg
+title: Cabling
+description: Take your knitting to the next level by learning cabling.
 price: 20
-meta_1: "May 7\_ from 6-8 p.m."
+meta_1: 'Nov. 9, 1 - 3pm'
 meta_2: ' '
 ---
 

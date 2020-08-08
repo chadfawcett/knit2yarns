@@ -1,11 +1,13 @@
 ---
-date: 2019-04-06T18:30:36.174Z
-image_url: /img/uploads/felted-bunny.jpg
-title: Needle felted Bunny
-description: "This is an intermediate class that involves some sculpting.\_"
-price: 50
-price_details: ( includes some of the supplies )
-meta_1: April 6 from 12-4 p.m.
+date: 2020-03-23T05:00:00.000Z
+image_url: /img/uploads/img_9883.jpg
+title: Needle Felted Bunny
+description: >-
+  How cute is this felted bunny?  This is a beginner class to introduce you to
+  needle felting.  You can have a bunch ready for easter 
+price: 25
+price_details: 'kits will be available '
+meta_1: 'March 26 2020, 6 - 8pm'
 meta_2: ' '
 ---
 

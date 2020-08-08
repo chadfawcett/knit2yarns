@@ -1,9 +1,12 @@
 ---
-date: 2019-05-04T18:16:55.813Z
-title: All the cast on’s
-description: "Cable cast on, long tail, tubular, so many different ones!\_ This is a technique class where you will learn different cast ons and when to use them."
+date: 2020-02-22T05:55:45.513Z
+title: All the Cast On’s
+description: >
+  Who knew there were so many different ways to cast on?  Learn how and why it’s
+  best to use different ones.
 price: 20
-meta_1: "May 4\_ from 1-3 p.m."
+price_details: ' '
+meta_1: ' Feb 20  6-8 p.m.'
 meta_2: ' '
 ---
 
